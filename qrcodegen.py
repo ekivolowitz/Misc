@@ -4,7 +4,7 @@ import sys
 
 def makeQRCode(payload):
     img = q.create(payload)
-    img.svg('qrcode.svg', scale=8)
+    img.svg('qrcode.svg', scale=4)
 
 if __name__ == "__main__":
     value = sys.stdin.read()[:-1]
